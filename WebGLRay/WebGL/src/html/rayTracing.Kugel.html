@@ -92,6 +92,8 @@ void init() {
 }
 
 vec3 schnittpunktKugelPrufen(Kugel kugel, Strahl strahl, Licht licht) {
+
+    //Für Verständnis: Umbennung der Variablen 
     vec3 kugelzentrum = kugel.zentrum;
     vec3 kugelfarbe = kugel.farbe;
     float radius = kugel.radius;
@@ -101,6 +103,8 @@ vec3 schnittpunktKugelPrufen(Kugel kugel, Strahl strahl, Licht licht) {
     float ambiente = licht.ambiente;
     vec3 farbe = vec3(0.0, 0.0, 0.0);
 
+
+    //Intersection berechnen 
     vec3 abstandVomZentrum = (kameraursprung - kugelzentrum);
     float B = 2.0 * dot(kamerarichtung, abstandVomZentrum);
     float C = dot(abstandVomZentrum, abstandVomZentrum) - pow(radius, 2.0);
@@ -116,6 +120,7 @@ vec3 schnittpunktKugelPrufen(Kugel kugel, Strahl strahl, Licht licht) {
         t = -B / 2.0;
     }
 
+    //Lambing Color
     if (t > 0.0) {
         vec3 schnittpunkt = kameraursprung + (t * kamerarichtung);
         vec3 oberflachennormalenvektor = normalize(schnittpunkt - kugelzentrum);

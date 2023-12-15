@@ -113,3 +113,21 @@ ol {
     margin : 8px 25px;
     font-size: 70%;
 }
+#Videobox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+video{
+    height: 360px;
+    width: 360px;
+}
+@media screen and (max-width: 800px) {
+    .vidunit video {
+        display: block;
+        height: 300px;
+        width: 300px;
+    }
+    
+}
