@@ -1,0 +1,115 @@
+a{
+    text-decoration: none;
+    color : inherit 
+}
+body {
+    background-color: #f2f2f2;
+    text-align: center;
+    font-family:Geneva, Tahoma, sans-serif;
+    align-items: center;
+    overflow: hidden;
+}
+#bodykugel {
+    background-color: black;
+    color: white;
+}
+.bold{
+    font-weight: bold;
+}
+canvas {
+    width: 500px; height: 500px;
+}
+.container{
+    display: inline-block; 
+    text-align: center; 
+}
+h1 {
+    position: relative;
+    top:0px;
+    width:100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 260%;
+    font-weight: bold;
+}
+h1:hover{
+    text-shadow: 2px 2px rgb(255, 255, 138);    
+}
+h2{
+font-size: 125%;
+}
+#bodykugel h1:hover{
+    text-shadow: 2px 2px rgb(17, 14, 209);    
+
+}
+.flexit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;}
+.info {
+    position : absolute;
+    bottom:0px;
+    width:100%;
+    text-align: center;
+    font-size: 9px;
+    color: #777; 
+
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 80%;
+    width: 300px;
+    height : 120px;
+    margin: auto;
+    border-radius: 5%;
+    border: 2px solid rgb(155, 142, 143);
+    background-color: rgb(236, 232, 232) ;
+}
+.info-box p{
+    margin : 4px auto;
+}
+.info p{
+    margin-top: -4px;
+    margin-bottom: 4px;
+}
+.input-field {
+    margin-bottom: 7px;
+    font-size: 70%;
+}
+.label {
+    display: inline-block; 
+    width: 100px; 
+    text-align: center; 
+    margin-right: 10px; 
+}
+li {
+    margin: 20px 0;
+}
+.navlink {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    background-color: #e7e7e7; /* Hintergrundfarbe für Links */
+    padding: 5px; /* Polsterung hinzufügen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    display: inline-block; /* Blockelemente für bessere Anzeige */
+}
+.navlink:hover {
+    background-color: #dcdcdc; /* Farbe beim Überfahren ändern */
+}
+ol {
+    list-style: none;
+    padding: 25px;
+}
+.pw{
+    text-align: center;
+}
+.selection-group {
+    display: flex;
+    flex-direction: column;
+    margin : 8px 25px;
+    font-size: 70%;
+}
